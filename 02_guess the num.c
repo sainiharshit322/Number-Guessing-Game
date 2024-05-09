@@ -12,19 +12,21 @@ int main()
     // Keep running the loop until the number is guessed.
     do
         {
+            printf("Machine guessed a random number , now you have to find that number\n");
+            printf("GOOD LUCK \n");
             printf("Guess the number between 1 and 100\n");
             scanf("%d", &guess);
             if (guess > num)
             {
-                printf("Lower number please!!\n");
+                printf(" -> Lower number please!!\n");
             }
             else if (guess < num)
             {
-                printf("Higher number please!!\n");
+                printf(" -> Higher number please!!\n");
             }
             else
             {
-                printf("You guessed it in %d attempts\n", nguesses);
+                printf(" ^_^ You guessed it in %d attempts\n", nguesses);
             }
             nguesses++;
         }while (guess != num);
